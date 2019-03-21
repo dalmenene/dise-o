@@ -1,2 +1,2 @@
-# dise-o
+# diseno
 diseño elctronico
