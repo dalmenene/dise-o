@@ -1,0 +1,98 @@
+html>
+    
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="refresh.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+     
+
+    <style>
+  #map { 
+    width: 100%;
+    height: 85%;
+    box-shadow: 5px 5px 5px #888;
+ }
+</style>
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+
+  <div class="navbar-header">
+
+    <a class="navbar-brand" href="#">ZingChart.com</a>
+
+  </div>
+
+  <ul class="nav navbar-nav">
+
+    <li class="active"><a href="#">Admin</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Docs</a></li>
+    <li><a href="#">Blog</a></li>
+
+  </ul>
+
+</nav>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-xs-2">
+
+      <div class="panel panel-default">
+
+        <div class="panel-heading">
+          <a href="#">Dashboard</a>
+        </div>
+
+        <div class="panel-body">
+          <a href="#">Messages</a>
+        </div>
+
+        <div class="panel-body">
+          <a href="#">Widgets</a>
+        </div>
+
+        <div class="panel-body">
+          <a href="#">Analytics</a>
+        </div>
+
+        <div class="panel-body">
+          <a href="#">Forms</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-xs-6">
+
+      <div id='myChart'></div>
+
+    </div>
+
+    <div class="col-xs-4">
+
+      <div id='myChart1'></div>
+
+    </div>
+
+  </div>
+
+</div>
+    </body>
+<script>
+    initMap();
+</script>
+
+
+</html>

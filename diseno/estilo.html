@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+         <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="refresh.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+     
+
+    <style>
+  #map { 
+    width: 100%;
+    height: 85%;
+ }
+</style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Dise&ntilde;o Electronico</a>
+      
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row" >
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
+          
+         <div class="sidebar-sticky">
+            <table class="table" style="margin-top: 25px;" >
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">variable</th>
+      <th scope="col">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Latitud</td>
+      <td><div id="lat"> </div></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Longitud</td>
+      <td><div id="lon"> </div></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Fecha</td>
+      <td><div id="fech"> </div></td>
+    </tr>
+  </tbody>
+</table>
+
+
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+       
+          <div class="my-4" id="map" width="700" height="180">
+    </div>
+
+   
+        </main>
+      </div>
+    </div>
+
+  
+  </body>
+    <script>
+    initMap();
+</script>
+
+</html>

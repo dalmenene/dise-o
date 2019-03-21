@@ -1,0 +1,50 @@
+<html>
+    
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="refresh.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+     
+
+    <style>
+  #map { 
+    width: 100%;
+    height: 85%;
+    box-shadow: 5px 5px 5px #888;
+ }
+</style>
+    
+</head>
+<body>
+
+<div id="table1">
+   
+    <table class="table" style="border: 1px solid black; width: 100%;" >
+    <tr style="align-content: center;" ><th colspan="5" style="align-content: center;  border: 1px solid black;">dise&ntilde;o electronico</th></tr>
+    <tr style="border: 1px solid black;"><th>ID</th><th>Latitud</th><th>Longitud</th><th>Fecha</th><th>Fecha de llegada</th></tr>
+    <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;"><div id="ID"> </div></th>
+    <th style="border: 1px solid black;"><div id="lat"> </div></th>
+    <th style="border: 1px solid black;"><div id="lon"> </div></th>
+    <th style="border: 1px solid black;"><div id="fech"> </div></th>
+    <th style="border: 1px solid black;"><div id="fech2"> </div></th>
+    </tr>
+    </table>
+</div>    
+    <p id="demo"></p>
+    <div id="map"></div>
+    
+</body>
+<script>
+    initMap();
+</script>
+
+
+</html>
+
